@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+</head>
+
+<body>
+
+	<div class="card-panel red lighten-1" role="alert" th:if="${not #strings.isEmpty(mensagem)}">
+		<span class="white-text text-darken-2" th:text="${mensagem}"></span>
+	</div>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
